@@ -1,6 +1,13 @@
-# 3dof-planar-robotic-arm-simulation
-Simulation of 3 degrees of freedom, planar robotic arm in MATLAB.
+PROJE BAŞLIĞI : 2 EKSENLİ ROBOT KOLUN MATLABDA SİMÜLASYONU
 
-For more information, you can refer to [this site](https://akshayk07.weebly.com/3dof-robotic-arm.html)
+GRUP ÜYELERİ :  141202065 Kevser İrem CÖMERT
+	 	            131202053 Arzu CAFEROĞLU
 
-For a demo, you can refer [this video](https://youtu.be/nlejdCL5kY8)
+PROJE DANIŞMANI : Dr. Öğr. Üyesi Akif DURDU
+
+PROJE AMACI : Link uzunlukları değiştirilebilir, link parametreleri veya hedef noktanın 
+koordinatları ile ileri kinematik ve ters kinematik denklemlerin kullanılacağı bir manipülatör  
+simülasyonu yapılması amaçlanmıştır. Yani açı girilen manüpilatörün denklem 
+hesapları sonucu gideceği nokta belirlenmiştir (ileri kinematik denklermler kullanılarak). Aynı
+ şekilde belirlenen bir noktaya gidebilmek için gerekli parametrelerin hesabı yapılmıştır (ters 
+kinematik denklemler kullanılarak).
