@@ -1,0 +1,39 @@
+PROJE BAÞLIÐI : 2 EKSENLÝ ROBOT KOLUN MATLABDA SÝMÜLASYONU
+
+GRUP ÜYELERÝ :  141202065 Kevser Ýrem CÖMERT
+	 	131202053 Arzu CAFEROÐLU
+
+PROJE DANIÞMANI : Dr. Öðr. Üyesi Akif DURDU
+
+PROJE AMACI : Link uzunluklarý deðiþtirilebilir, link parametreleri veya hedef noktanýn 
+koordinatlarý ile ileri kinematik ve ters kinematik denklemlerin kullanýlacaðý bir manipülatör  
+simülasyonu yapýlmasý amaçlanmýþtýr. Yani açý girilen manüpilatörün denklem 
+hesaplarý sonucu gideceði nokta belirlenmiþtir (ileri kinematik denklermler kullanýlarak). Ayný
+ þekilde belirlenen bir noktaya gidebilmek için gerekli parametrelerin hesabý yapýlmýþtýr (ters 
+kinematik denklemler kullanýlarak).
+
+KODUN ÇALIÞMASI : Kod ilk çalýþtýrýldýðýnda kullanýcýdan link uzunluklarýný girmesini istemektedir.
+Link uzunluklarý girildikten sonra ileri  veya ters kinematik seçimi yapýlmasýný istemektedir
+( seçim 1 ise ileri kinematik , seçim 2 ters kinematik ). Ýleri kinematik denklemler seçilirse, girilen
+açý deðerlerine göre rotasyon ve transformasyon matrisleri kullanýlarak çizim gerçekleþtirilir. Ters 
+kinematik seçildiðinde ise hedef noktanýn koordinatlarýna göre ters kinematik denklemler ile gereken açýlar
+bulunur ve çizim açýlara göre tekrar yapýlýr. 
+
+Transformasyon matrisi olarak;
+T = [1 0 0 d;
+    0 1 0 0;
+    0 0 1 0;
+    0 0 0 1];
+
+Rotasyon Matrisi olarak ; 
+R = [cos(theta) -sin(theta) 0 0;
+    sin(theta)   cos(theta) 0 0;
+    0 		0 	    1 0
+    0 		0	    0 1];
+ 
+kullanýlmýþtýr.
+
+Ters Kinematik Denklemler için;
+q2=arccos (x^2+y^2-a^2-b^2)/2a*b
+q1=arctan y/x-arctan(bsin q2)/a+bcos q2
+denklemlerinden yararlanýlmýþtýr. ( a,b link uzunluklarý; x,y koordinat deðerleri )
